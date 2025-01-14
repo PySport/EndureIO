@@ -1,0 +1,32 @@
+[project]
+name = "endureio"
+version = "0.1.0"
+description = "Python library for reading and writing activity files for endurance sports"
+readme = "README.md"
+authors = [
+    { name = "Aart Goossens", email = "aart@gssns.io" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=2.2.3",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+]
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
+testpaths = [
+    "tests",
+]
+pythonpath = [
+    "src",
+]
