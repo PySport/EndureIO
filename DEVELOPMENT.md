@@ -54,7 +54,7 @@ pytestargs="-k some_test" make test
 
 ## Pre-commit hooks
 
-Lorem ipsum...
+To install the pre-commit hooks run the command `uv run pre-commit install`. Now `pre-commit` will run automatically on `git commit`.
 
 
 ## Publishing
